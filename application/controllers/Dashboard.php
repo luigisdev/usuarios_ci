@@ -17,7 +17,9 @@ class Dashboard extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('layout/header');
+		$titulo['titulo'] = "Dashboard";
+		
+		$this->load->view('layout/header', $titulo);
 		$this->load->view('layout/aside');
 		$this->load->view('layout/dashboard');
 		$this->load->view('layout/footer');

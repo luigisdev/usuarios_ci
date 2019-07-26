@@ -38,7 +38,7 @@ class Login extends CI_Controller {
 			$data = array (
 				'id' => $res->id,
 				'nombres' => $res->nombres,
-				'rol' => $res->rol_id,
+				'rol' => $res->tcat_roles_id,
 				'login' => TRUE
 				);
 			$this->session->set_userdata($data);
